@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-blue: #2a64a5;
+  --color-primary-orange: #ec6923;
+  --color-primary-navy: #02294f;
+  --color-gray-bg: #f1f1f1;
+  --color-gray-txt: #818181;
+  --color-gray-border: #cdcdcd;
+  
+  --font-inter: 'Inter', sans-serif;
+  --font-syne: 'Syne', sans-serif;
+
+  --animate-animated-bg: animatedBackground 20s linear infinite;
+  --animate-animated-bg-slow: animatedBackground 30s linear infinite;
+  --animate-bounce-2s: bounce 2s linear infinite;
+  --animate-bounce-3s: bounce 3s linear infinite;
+  --animate-bounce-4s: bounce 4s linear infinite;
+  --animate-bounce-5s: bounce 5s linear infinite;
+  --animate-move-bg: moveBg 3s linear infinite;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-inter);
+    line-height: 30px;
+    overflow-x: hidden;
+  }
+  p {
+    color: var(--color-gray-txt);
+  }
+}
+
+@layer utilities {
+  .flip-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  .flip-card-inner {
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    transform: rotateX(180deg);
+  }
+  .timeline-bar-bg {
+    background-color: var(--color-primary-orange);
+    position: relative;
+    height: 3px;
+    width: 90px;
+    border-radius: 48px;
+    margin: 1.25rem auto 0;
+  }
+  .timeline-bar-bg::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -3.7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #0C5ADB;
+    animation: var(--animate-move-bg);
+  }
+}
+
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-60px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes moveBg {
+  from { transform: translateX(0); }
+  to { transform: translateX(88px); }
+}
