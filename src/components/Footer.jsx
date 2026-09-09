@@ -40,7 +40,7 @@ const Footer = () => {
               <h4 className="text-[#f57e35] text-[18px] font-syne font-semibold m-0">Phone Number</h4>
             </div>
             <div className="ml-[71px] opacity-80">
-              <p className="text-[14px] text-white m-0">+91 9407235770</p>
+              <p className="text-[14px] text-white m-0">+91 6261640704</p>
             </div>
           </div>
           
