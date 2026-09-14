@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Header from './components/Header';
 import Banner from './components/Banner';
 import AboutDevelopment from './components/AboutDevelopment';
 import PhaseOfDevelopment from './components/PhaseOfDevelopment';
@@ -16,12 +15,12 @@ function App() {
   useEffect(() => {
     AOS.init({
       easing: 'ease-out-back',
-      duration: 3000,
+      duration: window.innerWidth < 768 ? 1200 : 3000,
     });
   }, []);
 
   return (
-    <div className="font-inter">
+    <div className="font-inter overflow-hidden relative">
       <Banner />
       <AboutDevelopment />
       <PhaseOfDevelopment />

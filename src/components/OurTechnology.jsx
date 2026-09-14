@@ -19,7 +19,7 @@ const technologies = [
 
 const OurTechnology = () => {
   return (
-    <section className="py-[100px] text-center">
+    <section className="py-12 sm:py-16 md:py-[100px] text-center overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="mb-10" data-aos="zoom-in">
           <h1 className="text-primary-blue text-4xl m-0 font-syne font-bold">Our Technology</h1>
@@ -27,9 +27,9 @@ const OurTechnology = () => {
           <AnimatedBar />
         </div>
 
-        <div className="flex flex-wrap justify-center items-end mt-20">
+        <div className="flex flex-wrap justify-center items-end mt-8 sm:mt-12 md:mt-20">
           {technologies.map((tech, index) => (
-            <div key={index} className="w-1/3 sm:w-1/4 md:w-1/5 p-4 flex flex-col items-center">
+            <div key={index} className="w-1/2 sm:w-1/3 md:w-1/5 p-4 flex flex-col items-center">
               <div className={`w-full ${tech.animationClass}`}>
                 <div className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-full border border-gray-200 shadow-lg flex items-center justify-center mx-auto bg-white hover:scale-110 transition-transform">
                   {tech.icon}

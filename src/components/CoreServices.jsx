@@ -43,14 +43,14 @@ const coreServices = [
 
 const CoreServices = () => {
   return (
-    <section className="bg-gray-bg py-[100px] relative overflow-hidden">
+    <section className="bg-gray-bg py-12 sm:py-16 md:py-[100px] relative overflow-hidden">
       {/* Decorative corners */}
-      <div className="absolute top-0 right-0 w-[350px] opacity-20 pointer-events-none">
+      <div className="absolute top-0 right-0 w-[200px] sm:w-[280px] md:w-[350px] opacity-20 pointer-events-none">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#2a64a5" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.4,-46.5C91,-33.9,97.2,-18.8,97.4,-3.6C97.6,11.6,91.8,26.9,81.8,39.3C71.8,51.7,57.6,61.1,42.5,67.6C27.4,74.1,11.4,77.7,-3.6,83C-18.6,88.3,-32.6,95.3,-44.6,91.2C-56.6,87.1,-66.6,71.9,-73.4,56.7C-80.2,41.5,-83.8,26.3,-83.6,11.5C-83.4,-3.3,-79.4,-17.7,-72.1,-30C-64.8,-42.3,-54.2,-52.5,-41.8,-60.2C-29.4,-67.9,-15.2,-73.1,0.2,-73.4C15.6,-73.7,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
         </svg>
       </div>
-      <div className="absolute bottom-0 left-0 w-[350px] opacity-20 pointer-events-none transform rotate-180">
+      <div className="absolute bottom-0 left-0 w-[200px] sm:w-[280px] md:w-[350px] opacity-20 pointer-events-none transform rotate-180">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#ec6923" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.4,-46.5C91,-33.9,97.2,-18.8,97.4,-3.6C97.6,11.6,91.8,26.9,81.8,39.3C71.8,51.7,57.6,61.1,42.5,67.6C27.4,74.1,11.4,77.7,-3.6,83C-18.6,88.3,-32.6,95.3,-44.6,91.2C-56.6,87.1,-66.6,71.9,-73.4,56.7C-80.2,41.5,-83.8,26.3,-83.6,11.5C-83.4,-3.3,-79.4,-17.7,-72.1,-30C-64.8,-42.3,-54.2,-52.5,-41.8,-60.2C-29.4,-67.9,-15.2,-73.1,0.2,-73.4C15.6,-73.7,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
         </svg>
@@ -70,7 +70,7 @@ const CoreServices = () => {
               className="w-full md:w-1/2 lg:w-1/3 px-4 mb-[25px]"
               data-aos={service.animation}
             >
-              <div className="flip-card h-[382px] mb-[30px]">
+              <div className="flip-card h-[320px] sm:h-[350px] md:h-[382px] mb-[30px]" tabIndex="0">
                 <div className="flip-card-inner relative w-full h-full shadow-[0px_1px_51.3px_5.7px_rgba(137,143,156,0.15)] rounded-lg">
                   
                   {/* Front Side */}

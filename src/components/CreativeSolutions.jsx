@@ -10,14 +10,14 @@ const CreativeSolutions = () => {
 
       <div className="w-full relative z-10 flex flex-wrap">
         {/* Left Content */}
-        <div className="w-full md:w-1/2 bg-white px-8 py-16 md:px-[5%] md:py-[7%] flex flex-col justify-center">
+        <div className="w-full md:w-1/2 bg-white px-4 py-10 sm:px-6 sm:py-12 md:px-[5%] md:py-[7%] flex flex-col justify-center">
           <div>
-            <h2 className="text-[36px] text-primary-orange font-bold font-syne mb-2" data-aos="zoom-in">
+            <h2 className="text-[28px] md:text-[36px] text-primary-orange font-bold font-syne mb-2" data-aos="zoom-in">
               <span className="text-gray-800">Our </span>Creative Solutions
               <div className="bg-[#0c5adb] h-[1px] w-0"></div>
               <div className="bg-primary-orange h-[3px] w-[90px] mt-5 relative rounded-[48px] before:content-[''] before:absolute before:left-0 before:top-[-3.7px] before:h-[10px] before:w-[10px] before:rounded-full before:bg-[#0C5ADB] before:animate-[moveBg_3s_linear_infinite]"></div>
             </h2>
-            <p className="text-[14px] text-gray-txt mb-[36px]" data-aos="zoom-in">
+            <p className="text-[14px] text-gray-txt mb-6 md:mb-[36px]" data-aos="zoom-in">
               Engaging clients we align development program with business goals for your business addressing critical pain points for your success. We believe in delivering design and required changes your business need.
             </p>
           </div>
@@ -42,25 +42,25 @@ const CreativeSolutions = () => {
               <div className="w-1/2 px-2 mb-4">
                 <div className="bg-white p-[30px_10px] rounded-[10px] text-center shadow-[4px_4px_8px_#0404044f] h-full flex flex-col justify-center items-center transform transition-transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="200">
                   <FaMobileAlt className="text-6xl text-primary-navy mb-4" />
-                  <h3 className="m-0 text-[18px] mt-[21px] font-black font-syne">Mobile Applications</h3>
+                  <h3 className="m-0 text-[16px] md:text-[18px] mt-[21px] font-black font-syne">Mobile Applications</h3>
                 </div>
               </div>
               <div className="w-1/2 px-2 mb-4">
                 <div className="bg-white p-[30px_10px] rounded-[10px] text-center shadow-[4px_4px_8px_#0404044f] h-full flex flex-col justify-center items-center transform transition-transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="300">
                   <FaLaptop className="text-6xl text-primary-navy mb-4" />
-                  <h3 className="m-0 text-[18px] mt-[21px] font-black font-syne">Web Applications</h3>
+                  <h3 className="m-0 text-[16px] md:text-[18px] mt-[21px] font-black font-syne">Web Applications</h3>
                 </div>
               </div>
               <div className="w-1/2 px-2">
                 <div className="bg-white p-[30px_10px] rounded-[10px] text-center shadow-[4px_4px_8px_#0404044f] h-full flex flex-col justify-center items-center transform transition-transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="400">
                   <FaCloud className="text-6xl text-primary-navy mb-4" />
-                  <h3 className="m-0 text-[18px] mt-[21px] font-black font-syne">Cloud Computing</h3>
+                  <h3 className="m-0 text-[16px] md:text-[18px] mt-[21px] font-black font-syne">Cloud Computing</h3>
                 </div>
               </div>
               <div className="w-1/2 px-2">
                 <div className="bg-white p-[30px_10px] rounded-[10px] text-center shadow-[4px_4px_8px_#0404044f] h-full flex flex-col justify-center items-center transform transition-transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="500">
                   <FaBullhorn className="text-6xl text-primary-navy mb-4" />
-                  <h3 className="m-0 text-[18px] mt-[21px] font-black font-syne">Digital Marketing</h3>
+                  <h3 className="m-0 text-[16px] md:text-[18px] mt-[21px] font-black font-syne">Digital Marketing</h3>
                 </div>
               </div>
             </div>

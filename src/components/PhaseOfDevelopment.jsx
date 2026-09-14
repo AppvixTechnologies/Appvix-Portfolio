@@ -59,7 +59,7 @@ const PhaseOfDevelopment = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[500px] bg-fixed bg-center bg-no-repeat bg-cover py-[100px] z-10" style={{ backgroundImage: 'url("https://www.starlinetechno.net/images/bg.png")' }}>
+    <section className="relative min-h-[500px] bg-scroll md:bg-fixed bg-center bg-no-repeat bg-cover py-12 md:py-[100px] z-10 overflow-hidden" style={{ backgroundImage: 'url("https://www.starlinetechno.net/images/bg.png")' }}>
       <div className="absolute inset-0 bg-white/90 z-0"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-10" data-aos="zoom-in">
@@ -68,11 +68,11 @@ const PhaseOfDevelopment = () => {
           <AnimatedBar />
         </div>
 
-        <div className="relative mx-auto max-w-5xl py-0 md:py-[100px]">
+        <div className="relative mx-auto max-w-5xl py-8 md:py-[100px]">
           {/* Main vertical line */}
           <span className="hidden md:block absolute left-1/2 w-[2px] h-full bg-[#e9e9e9] transform -translate-x-1/2 origin-top" data-aos="zoom-in"></span>
           
-          <div className="flex flex-col gap-24 md:gap-32">
+          <div className="flex flex-col gap-12 sm:gap-16 md:gap-32">
             {phases.map((phase, index) => {
               const isEven = index % 2 !== 0;
               return (
@@ -91,19 +91,18 @@ const PhaseOfDevelopment = () => {
                   </div>
 
                   <div className={`w-full md:w-1/2 px-4 md:px-16 relative flex flex-col justify-center text-center ${isEven ? 'md:text-right' : 'md:text-left'}`} data-aos="fade-up">
-                    <div className="relative z-10 inline-block">
+                    <div className="relative z-10 inline-block w-full">
                       <span 
-                        className={`absolute top-1/2 -translate-y-1/2 ${isEven ? 'right-0' : 'left-0'} m-0 font-syne text-[150px] md:text-[235px] font-medium z-0 opacity-20 leading-none`}
+                        className={`absolute top-1/2 -translate-y-1/2 ${isEven ? 'right-0 translate-x-[10%] md:translate-x-[30%]' : 'left-0 -translate-x-[10%] md:-translate-x-[20%]'} m-0 font-syne text-[80px] sm:text-[120px] md:text-[235px] font-medium z-0 opacity-20 leading-none`}
                         style={{
                           background: 'linear-gradient(-90deg, #e5671a 0, #e5671a 50%, #2a64a5 100%)',
                           WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                          transform: isEven ? 'translate(30%, -50%)' : 'translate(-20%, -50%)'
+                          WebkitTextFillColor: 'transparent'
                         }}
                       >
                         {phase.count}
                       </span>
-                      <h4 className="relative z-10 font-syne font-medium text-[45px] md:text-[60px] m-0 mb-4 text-[#1a1a1a]">{phase.title}</h4>
+                      <h4 className="relative z-10 font-syne font-medium text-[32px] md:text-[60px] m-0 mb-4 text-[#1a1a1a]">{phase.title}</h4>
                       <p className="relative z-10 text-[#666] text-[15px] leading-relaxed max-w-sm mx-auto md:mx-0">{phase.text}</p>
                     </div>
                   </div>

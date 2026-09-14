@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-navy pt-[60px] pb-[20px] text-white">
+    <footer className="bg-primary-navy pt-8 sm:pt-12 md:pt-[60px] pb-[20px] text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           
@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
               <h4 className="text-[#f57e35] text-[18px] font-syne font-semibold m-0">E-Mail Address</h4>
             </div>
-            <div className="ml-[71px] opacity-80">
+            <div className="ml-0 md:ml-[71px] opacity-80">
               <p className="text-[14px] text-white m-0">appvixtechnologies@gmail.com</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <h4 className="text-[#f57e35] text-[18px] font-syne font-semibold m-0">Phone Number</h4>
             </div>
-            <div className="ml-[71px] opacity-80">
+            <div className="ml-0 md:ml-[71px] opacity-80">
               <p className="text-[14px] text-white m-0">+91 6261640704</p>
             </div>
           </div>
